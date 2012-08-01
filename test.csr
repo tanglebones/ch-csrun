@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CsRun {
+	public static class Program
+	{
+		public static void Main(string[] args)
+		{
+			foreach(var arg in args.Where(arg=>!string.IsNullOrEmpty(arg)))
+                Console.WriteLine(arg);
+		}
+	}
+}
